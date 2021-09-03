@@ -1,0 +1,13 @@
+/*
+Escribir una función en C, que reciba como parámetros una cadena de caracteres y un carácter, y devuelva la cantidad de caracteres que hay 
+desde el principio de la cadena hasta encontrar el primer carácter que se pasa como segundo parámetro. En caso de no haber ninguno devuelve -1.
+
+Recorrer la cadena a lo sumo una vez, evitando realizar ciclos innecesarios.
+Escribir el programa que incluya a la función y las invocaciones con los siguientes ejemplos, y la impresión de los valores devueltos:
+
+cantidad_hasta_caracter("El sol es amarillo.", ‘$’) devuelve -1
+cantidad_hasta_caracter("El sol es amarillo.", ‘m’) devuelve 11
+cantidad_hasta_caracter ("30/06/2021", ‘/’) devuelve 2
+cantidad_hasta_caracter ("El precio es $2000", ‘0’) devuelve 15
+
+*/
