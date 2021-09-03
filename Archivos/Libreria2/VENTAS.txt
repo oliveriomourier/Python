@@ -1,0 +1,9 @@
+01/01/2021, avellaneda, 2
+01/01/2021, lomas, 2
+01/01/2021, temperley, 1
+03/01/2021, lomas, 1
+03/01/2021, temperley, 1
+05/01/2021, lomas, 1
+05/01/2021, temperley, 1
+04/03/2021, lomas, 1
+04/03/2021, temperley, 1
