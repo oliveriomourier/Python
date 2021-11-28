@@ -43,3 +43,16 @@ print(reemplazarDigitos('su clave es: 1540'))
 #d) Inserte el caracter cada 3 dígitos en la cadena. Ej. '2552552550' y '.' debería devolver
 #'255.255.255.0'
 
+def insertarCaracterCadaTres(palabra, caracter):
+    palabraNueva = ""
+    
+    for i in range(len(palabra)):
+        if i%3 == 0 and i!=0:
+            palabraNueva += caracter
+        palabraNueva += palabra[i]
+            
+    return palabraNueva
+
+print(insertarCaracterCadaTres('2552552550', '.'))
+    
+
