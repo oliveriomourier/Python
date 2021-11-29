@@ -23,9 +23,24 @@ def devolverInicialess(palabra):
     for palabra in palabraSeparada:
         print(palabra.capitalize(), end=" ")
 
-devolverInicialess('republica argentina')
-
+#devolverInicialess('republica argentina')
 
 
 #c) Las palabras que comiencen con la letra ‘A’. Por ejemplo, si recibe 'Antes de ayer'
 #debe devolver 'Antes ayer'
+
+def palabrasQueEmpiecenCon(oracion, letra):
+    palabraSeparada = oracion.split()
+    palabraQueEmpiezaConLetra = []
+    
+    for palabra in palabraSeparada:
+        if palabra[0].upper() == letra.upper():
+            palabraQueEmpiezaConLetra.append(palabra)
+            
+    for palabra in palabraQueEmpiezaConLetra:
+        print(palabra, end = " ")
+        
+palabrasQueEmpiecenCon('Antes de ayer', 'A')
+        
+    
+            
