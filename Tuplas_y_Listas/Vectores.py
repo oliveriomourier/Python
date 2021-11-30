@@ -16,10 +16,21 @@ def productoEscalar(vector1, vector2):
 def sonOrtogonales(vector1, vector2):
     escalar = productoEscalar(vector1, vector2)
     if escalar:
-        print("Somos dos vectores ortogonales")
-    else:
-        print("No somos vectores ortogonales")
-        
+        return False 
+    
+    return True
+
 sonOrtogonales((1,5,-2), (2, 0,1))
-#c) Escribir una función que reciba dos vectores y devuelva si son paralelos o no.
-#d) Escribir una función que reciba un vector y devuelva su norma.
+    
+#c) Escribir una función que reciba un vector y devuelva su norma.
+    
+def normaVector(vector):
+    sumatoria = 0
+    
+    for elemento in vector:
+        sumatoria += elemento**2
+        
+    return sumatoria**0.5
+
+print(normaVector((3,4)))
+        
