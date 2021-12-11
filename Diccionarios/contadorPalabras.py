@@ -15,28 +15,34 @@ def contarAparicionesPalabras(cadena):
             
     return diccionario
 
-print(contarAparicionesPalabras("Que lindo día que hace hoy"))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#print(contarAparicionesPalabras("Que lindo día que hace hoy"))
 
 #b) Escribir una función que cuente la cantidad de apariciones de cada caracter en una ca-
 #dena de texto, y los devuelva en un diccionario.
-#c) Escribir una función que reciba una cantidad de iteraciones de una tirada de 2 dados a
-#realizar y devuelva la cantidad de veces que se observa cada valor de la suma de los dos
-#dados.
-#Nota: utilizar el módulo random para obtener tiradas aleatorias.
+
+def contarAparicionesCaracteres(cadena):
+    diccionario = {}
+    cadenaLower = cadena.lower()
+    
+    for caracter in cadenaLower:
+        if caracter in diccionario:
+            diccionario[caracter] += 1;
+        else:
+            diccionario[caracter] = 1;
+            
+    return diccionario
+
+
+#print(contarAparicionesCaracteres("Que lindo día que hace hoy"))
+
+
+    
+
+
+
+
+
+
+
+
+
