@@ -9,4 +9,21 @@
 def montoFinal(pesos, interes, anios):
     return pesos * (1 + interes/100)**anios
 
-print(montoFinal(100, 5, 5))
+print(round(montoFinal(100, 5, 5), 2))
+
+#Ejercicio 2.2. Utilizando la función del ejercicio anterior, escribir un programa que le pregunte
+#al usuario la cantidad de pesos inicial, la tasa de interés y el número de años y muestre el monto
+#final a obtener.
+
+def ingresarPesosInteresAnios():
+    pesos = int(input("Ingrese la cantidad de pesos iniciales: "))
+    interes = int(input("Ingrese la tasa de interes: "))
+    anios = int(input("Ingrese la cantidad de anios: "))
+    
+    return pesos, interes, anios
+
+def main():
+    pesos, interes, anios = ingresarPesosInteresAnios()
+    print(round(montoFinal(pesos, interes, anios), 2))
+    
+main()
